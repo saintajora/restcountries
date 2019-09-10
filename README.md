@@ -12,7 +12,7 @@ All PHP packages required for [Laravel](https://laravel.com/docs/5.7)
 
 ```shell
 $ php artisan serve
-
+```
 - The page will then be available at [http://localhost:8000](localhost:8000)
 
 ### Optional Database Cache
@@ -25,3 +25,4 @@ To cache the dataset to the server:
 
 ```shell
 $ php artisan migrate && php artisan db:seed
+```
