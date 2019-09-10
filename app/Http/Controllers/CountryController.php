@@ -36,7 +36,7 @@ class CountryController extends Controller {
 		try {
 			$c = Country::first();
 			if(!empty($c)) $db = true;
-		} catch(Exception $e) {}
+		} catch(\PDOException $e) {}
 
 		if($db == true) {
 			if($chars == 2) {
