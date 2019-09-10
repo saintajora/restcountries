@@ -1,4 +1,6 @@
-
+<!-- 
+	Root view
+ -->
 @include('header')
         
 <div id="search"></div>

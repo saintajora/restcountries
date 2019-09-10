@@ -35,7 +35,7 @@ class CountryController extends Controller {
 		try {
 			$c = Country::first();
 			if(!empty($c)) $db = true;
-		} catch(\Exception $e) {}
+		} catch(Exception $e) {}
 
 		if($db == true) {
 			if($chars == 2) {
