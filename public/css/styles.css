@@ -1,0 +1,51 @@
+/* Just a little spit-polish. */
+
+.hide {
+	display: none;
+}
+
+.card-header {
+	font-weight: bold;
+	font-size: 1.4em;
+}
+
+.card-body span {
+	width: auto;
+	padding: .5em;
+	clear: both;
+}
+
+.country-flag {
+	text-align: center;
+	max-width: 20%;
+	float: left;
+	clear: left;
+}
+
+.country-region,.country-subregion,.country-population,.country-languages {
+	float: left;
+	clear: none;
+	padding: 1em;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.regions div {
+	float: left;
+	clear: none;
+	padding: 0.1em;
+	margin: 0.1em;
+	border: 1px solid grey;
+}
+
+.jumbotron {
+	text-align: center;
+}
+
+h5 {
+	text-decoration: underline;
+	font-size: 1.1em;
+}
