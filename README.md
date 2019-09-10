@@ -20,7 +20,7 @@ $ php artisan serve
 To cache the dataset to the server: 
 - Create a MySQL database to contain the data.
 - Create an .env file by copying .env.example.
-- Populate your .env file with the necessary MySQL connection data as indicated [here](https://laravel.com/docs/5.7/database).)
+- Populate your .env file with the necessary MySQL connection data as indicated [here](https://laravel.com/docs/5.7/database).
 - From the project root directory, issue the following command:
 
 ```shell
