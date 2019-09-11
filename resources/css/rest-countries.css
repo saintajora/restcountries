@@ -1,4 +1,17 @@
 /* Just a little spit-polish. */
+h5 {
+	text-decoration: underline;
+	font-size: 1.1em;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+#search-query {
+	min-width: 50%;
+}
 
 .hide {
 	display: none;
@@ -22,15 +35,13 @@
 	clear: left;
 }
 
-.country-region,.country-subregion,.country-population,.country-languages {
+.country-region,
+.country-subregion,
+.country-population,
+.country-languages {
 	float: left;
 	clear: none;
 	padding: 1em;
-}
-
-img {
-	max-width: 100%;
-	height: auto;
 }
 
 .regions div {
@@ -43,9 +54,4 @@ img {
 
 .jumbotron {
 	text-align: center;
-}
-
-h5 {
-	text-decoration: underline;
-	font-size: 1.1em;
 }

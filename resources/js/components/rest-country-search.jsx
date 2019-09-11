@@ -2,7 +2,7 @@
  * React Components for the search engine
  * 
  * @author Ben Goetzinger
- * @package RestComponents
+ * @package RestCountries
  */
 
 import React, { Component } from 'react';
@@ -121,12 +121,8 @@ class RestCountrySearch extends Component {
 		return (
 			<div className="container">
 
-				<div className="card"><div className="card-body">
-					<form onSubmit={this.handleSubmit}>
-						<div className="input-group">
-							<input id="search-query" className="form-control" type="text" value={this.state.query} onChange={this.queryChange} />
-							<button className="btn btn-primary" type="submit" onClick={this.handleSubmit}>Search</button>
-						</div>
+				<div className="card">
+					<form className="form" onSubmit={this.handleSubmit}>
 						<div className="input-group">
 							<div className="input-group-prepend"><span className="input-group-text">Order By</span></div>
 							<select onChange={this.orderByChange} className="form-control">
@@ -141,9 +137,11 @@ class RestCountrySearch extends Component {
 								<option value="75">75</option>
 								<option value="100">100</option>
 							</select>
+							<input id="search-query" className="form-control" type="text" value={this.state.query} onChange={this.queryChange} />
+							<button className="btn btn-primary" type="submit" onClick={this.handleSubmit}>Search</button>
 						</div>
 					</form>
-				</div></div>
+				</div>
 
 				<ErrorMessage message={this.state.error} />
 
@@ -160,7 +158,8 @@ class RestCountrySearch extends Component {
 								<span>{this.state.regions[region]}</span>
 							</div>
 						))}
-					</div></div>
+					</div>
+				</div>
 
 				<div className={Object.entries(this.state.subregions).length === 0 ? "card bg-light hide" : "card bg-light"}>
 					<div className="card-header">Sub Regions</div>
@@ -171,7 +170,8 @@ class RestCountrySearch extends Component {
 								<span>{this.state.subregions[region]}</span>
 							</div>
 						))}
-					</div></div>
+					</div>
+				</div>
 
 				<div className={this.state.results.length == 0 ? "card bg-light hide" : "card bg-light"}><div className="card-header">
 					{this.state.results.length} Total Countries
@@ -207,8 +207,10 @@ class RestCountry extends Component {
 						<h5>Languages</h5>
 						{this.props.country.languages.map(l => (
 							<div key={l.iso639_1.toString()}>{l.name}</div>
-						))}</div>
-				</div></div>
+						))}
+					</div>
+				</div>
+			</div>
 		);
 	}
 }
@@ -220,7 +222,8 @@ class ErrorMessage extends Component {
 			<div className={this.props.message == '' ? 'card bg-danger text-white hide' : 'card bg-danger text-white'} id="error-div">
 				<div className="card-body">
 					<h5>{this.props.message}</h5>
-				</div></div>
+				</div>
+			</div>
 		);
 	}
 }

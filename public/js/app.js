@@ -59125,7 +59125,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
  * React Components for the search engine
  * 
  * @author Ben Goetzinger
- * @package RestComponents
+ * @package RestCountries
  */
 
  // Main Search component
@@ -59293,23 +59293,10 @@ function (_Component) {
         className: "container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "card"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "card-body"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+        className: "form",
         onSubmit: this.handleSubmit
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "input-group"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        id: "search-query",
-        className: "form-control",
-        type: "text",
-        value: this.state.query,
-        onChange: this.queryChange
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: "btn btn-primary",
-        type: "submit",
-        onClick: this.handleSubmit
-      }, "Search")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "input-group"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "input-group-prepend"
@@ -59338,7 +59325,17 @@ function (_Component) {
         value: "75"
       }, "75"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
         value: "100"
-      }, "100")))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ErrorMessage, {
+      }, "100")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        id: "search-query",
+        className: "form-control",
+        type: "text",
+        value: this.state.query,
+        onChange: this.queryChange
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "btn btn-primary",
+        type: "submit",
+        onClick: this.handleSubmit
+      }, "Search")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ErrorMessage, {
         message: this.state.error
       }), this.state.results.map(function (r) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(RestCountry, {
